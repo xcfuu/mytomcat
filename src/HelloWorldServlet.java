@@ -1,0 +1,25 @@
+import java.io.IOException;
+
+/**
+ * @author xuechaofu
+ * @date 2018/12/21 15:53
+ */
+public class HelloWorldServlet extends MyServlet{
+    @Override
+    public void doGet(MyRequest myRequest, MyResponse myResponse) {
+        try {
+            myResponse.write("get world... ");
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void doPost(MyRequest myRequest, MyResponse myResponse) {
+        try {
+            myResponse.write("post world...  ");
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+}
