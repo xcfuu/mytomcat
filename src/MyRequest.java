@@ -50,4 +50,12 @@ public class MyRequest {
     public void setMethod(String method) {
         this.method = method;
     }
+
+    @Override
+    public String toString() {
+        return "MyRequest{" +
+                "url='" + url + '\'' +
+                ", method='" + method + '\'' +
+                '}';
+    }
 }

@@ -9,7 +9,7 @@ public class ServletMappingConfig {
     public static List<ServletMapping> servletMappingList = new ArrayList<>();
 
     static {
-        servletMappingList.add(new ServletMapping("findGirl","/girl","mytomcat.FindGirlServlet"));
-        servletMappingList.add(new ServletMapping("holleWorld","/world","mytomcat.HelloWorldServlet"));
+        servletMappingList.add(new ServletMapping("findGirl","/girl","FindGirlServlet"));
+        servletMappingList.add(new ServletMapping("holleWorld","/world","HelloWorldServlet"));
     }
 }

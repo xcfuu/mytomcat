@@ -32,4 +32,11 @@ public class MyResponse {
     public void setOutputStream(OutputStream outputStream) {
         this.outputStream = outputStream;
     }
+
+    @Override
+    public String toString() {
+        return "MyResponse{" +
+                "outputStream=" + outputStream +
+                '}';
+    }
 }
